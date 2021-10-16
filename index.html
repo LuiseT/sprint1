@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina web</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #222222;
+        }
+
+        .header-section {
+            margin-bottom: 100px;
+        }
+
+        .header-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+
+        }
+
+        .site-title {
+            width: 30%;
+        }
+
+        .site-nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .site-nav>a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .site-nav>a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .logo-container {
+            width: 30%;
+        }
+
+        .logo-container__site-logo {
+            height: 80px;
+        }
+
+        .banner {
+            width: 100%;
+        }
+
+        .banner>img {
+            width: 100%;
+            height: 400px;
+            max-width: 1400px;
+            object-fit: cover;
+        }
+
+        .services-section,
+        .seccion-noticias,
+        .seccion-equipo {
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .seccion-noticias,
+        .header-container{
+            background-color: #f7f7f7
+
+        }
+
+        .seccion-noticias {
+            flex-wrap: wrap;
+        }
+
+        .services-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .news-info {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .news-header {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .news-info__title {
+            align-self: center;
+        }
+
+        .seccion-pie {
+            background-color: #25294f;
+            height: 200px;
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+        }
+
+        .services-info__imagen {
+            border-radius: 50%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .team-info{
+            width: 25%;
+            padding: 15px;
+        }
+
+        .team-info__imagen{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+
+<!-- inicio encabezado del sitio -->
+    <div class="header-section">
+        <div class="header-container">
+
+            <div class="site-title">
+                <h1>Servicio Tecnico Domicilio</h1>
+            </div>
+            
+            <!-- Inicio menú navegación -->
+            <ul class="site-nav">
+                <a href="#">Inicio</a>
+                <a href="#services">Servicios</a>
+                <a href="#news">Noticias</a>
+                <a href="#team">Nuestro equipo</a>
+            </ul>
+            <!-- Fin menú navegación -->
+
+            
+            
+            <div class="logo-container">
+                <img class="logo-container__site-logo" src="./logomision.png" alt="Logo MisionTic 2022">
+            </div>
+        </div>
+            
+        <div class="banner">
+            <img src="./banner.jpg" alt="A banner image">
+        </div>
+    </div>
+<!-- fin encabezado del sitio -->
+
+
+    <!-- inicio contenido principal -->
+    <div>
+
+
+        <h1>Servicios</h1>
+        <!-- inicio sección de servicios -->
+        <div id="services" class="services-section">
+            <article class="services-info">
+                <img class="services-info__imagen" src="https://pcrentmexico.files.wordpress.com/2019/05/soporte-tecnico-empresas.jpg" width="180" height="150" alt="">
+                <h2 class="services-info__title">Servicio Mantenimiento PC</h2>
+                <p class="services-info__text">
+                    Somos un equipo que presta servicios enfocados en proteger la información y equipos de computo de su empresa y asi garantizar el correcto funcionamiento de sus computadores y su negocio no se detenga.
+                </p>
+            </article>
+            <article class="services-info">
+                <img class="services-info__imagen" src="http://loinmer.com/wp-content/uploads/2017/06/software-640x450.jpg" width="180" height="150" alt="">
+                <h2 class="services-info__title">Asesoria Desarrollos</h2>
+                <p class="services-info__text">
+                    Ofrecemos como parte de nuestros servicios la asesoría en desarrollo de proyectos de sistematización e implementación. Así mismo desarrollamos aplicaciones a la medida que solucionen problemas específicos de las empresas de necesidad inmediata utilizando lenguajes y herramientas de última generación.
+                </p>
+            </article>
+            <article class="services-info">
+                <img class="services-info__imagen" src="http://www.visionsystems.com.mx/img/dispositivos.jpg" width="180" height="150" alt="">
+                <h2 class="services-info__title">Asesoria y Venta de Equipos</h2>
+                <p class="services-info__text">
+                    Muchas veces la información para adquirir equipos de computo puede ser insuficiente, que lo pueden llevar a errores es por ello la importancia de contar con una asesoría adecuada, en la adquisicion de equipos.
+
+
+                </p>
+            </article>
+        </div>
+        <!-- fin sección de servicios -->
+
+
+
+        <h1>Noticias</h1>
+        <!-- inicio sección de noticias -->
+        <div id="news" class="seccion-noticias">
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="https://cnnespanol.cnn.com/wp-content/uploads/2021/10/211004152148-underscored-windows-11-review-9-full-169.jpg" width="180" height="150" alt="">
+                    <h2 class="news-info__title">Microsoft comenzó a desplegar Windows 11.</h2>
+                </div>
+                <p class="news-info__text">
+                    Microsoft comenzó a desplegar su primera gran actualización de Windows 11. La actualización estará disponible como descarga gratuita para algunos de sus usuarios, ya que la nueva versión depende del "hardware" y de la antigüedad de los dispositivos PC.
+                </p>
+            </article>
+
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="https://imagenes.elpais.com/resizer/c5jWeBjQNPVV3eGtSNjS7vH3JtM=/414x311/cloudfront-eu-central-1.images.arcpublishing.com/prisa/MAJ4PVSQJVAULAX6FV43IAGFGE.jpg" width="180" height="150" alt="">
+                    <h2 class="news-info__title">Open Source en el Limbo</h2>
+                </div>
+                <p class="news-info__text">
+                    La dependencia de equipos diminutos que muchas veces compaginan su labor con otras obligaciones laborales complica la continuidad de iniciativas que, paradójicamente, son más fáciles de salvar.
+                </p>
+            </article>
+
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="https://static1.abc.es/media/tecnologia/2021/09/01/google-escalar-kipB--510x349@abc.PNG" width="180" height="150" alt="">
+                    <h2 class="news-info__title">Truco de Google para Imgs Pixeladas</h2>
+                </div>
+                <p class="news-info__text">
+                    El nuevo truco de Google que convierte imágenes pixeladas en fotos de alta resolución. La herramienta de la tecnológica emplea el ruido de la imagen para conseguir escalarla.Recientemente, la tecnológica estadounidense ha compartido los resultados de una investigación en la que comparte sus últimos avances para transformar imágenes con una resolución baja en fotografías de gran calidad. 
+                </p>
+            </article>
+
+        </div>
+        <!-- fin sección de noticias -->
+
+
+        <h1>Equipo</h1>
+        <!-- inicio sección de equipo -->
+        <section id="team" class="seccion-equipo">
+
+            <article class="team-info">
+                <img class="team-info__imagen" src="http://placeimg.com/100/200/people" alt="">
+                <h2 class="team-info__title">Luise Gamba</h2>
+                <p class="team-info__text">
+                    Luis Gamba es un hombre que no deja escapar las oportunidades que le ha dado la vida. A sus 51 años, esta vinculado al programa de Mintic 2022 y aspira a convertirse en uno de los primeros estudiantes de Misión TIC en Pereira.
+                </p>
+            </article>
+
+            
+
+        </section>
+        <!-- fin sección de equipo -->
+
+    </div>
+    <!-- fin contenido principal -->
+
+    <!-- Inicio pie del sitio -->
+    <div class="seccion-pie">
+        <article>
+            <h2>Contacto</h2>
+            <p></p>
+            <p>Luise Gamba</p>
+            <p>Teléfono : 3158357833</p>
+        </article>
+        <article>
+            <h2>Otra Información</h2>
+            <p>Mail : luise_gamba@yahoo.com.mx</p>
+            <p></p>
+            <p></p>
+        </article>
+    </div>
+    <!-- fin pie del sitio -->
+
+</body>
+
+</html>
